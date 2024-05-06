@@ -14,8 +14,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
 }
 
 .main-container {
@@ -121,7 +119,36 @@ a {
     margin-bottom: 5px;
 }
 
+/************************* header **********************/
 
+header {
+    background-color: white;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0px 50px 0px 30px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+} 
+
+nav a {
+    margin-left: 30px;
+}
+
+nav a:hover {
+    text-decoration: overline #0065FC;
+}
+
+header img {
+    max-width: 20%;
+    max-height: 20px;
+    padding: 15px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
