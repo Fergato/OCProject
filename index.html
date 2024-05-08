@@ -28,24 +28,45 @@
     </header>
     <main>
         <div class="main-container">
-            <div class="recherche-et-filtres">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>
-                    En plein centre-ville ou en pleine nature
-                </p>
+            <section class="recherche-et-filtres">
+                <div class="titre-recherche">
+                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p>
+                        En plein centre-ville ou en pleine nature
+                    </p>
+                </div>
                 <div class="barre-de-recherche">
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                     <form method="get" action="#">
-                            <label for="recherche"></label>
-                            <input type="recherche" name="recherche" id="recherche" value="Marseille, France">
+                        <div class="bouton-recherche">
+                                <input type="text" id="zonesaisie" name="zonesaisie" value="Marseille, France">
+                                <button id="boutonvldrecherche">Rechercher</button>
+                            <!-- Le lien pour la version responsive en dessous, l'icone quoi mon bro -->
+                            <!-- <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> -->
+                        </div>
                     </form>
-                    <div class="bouton-rechercher">
-                        Rechercher
-                        <!-- Le lien pour la version responsive en dessous, l'icone quoi mon bro -->
-                        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i> -->
+                </div>
+                <div class="filtres-et-titre">
+                    <h2>Filtres</h2>
+                    <div class="filtres">
+                        <div class="filtre-eco">
+                            <i class="fa-solid fa-money-bill-1-wave" style="color: #0065FC;"></i>&Eacute;conomique
+                        </div>
+                        <div class="filtre-familial">
+                            <i class="fa-solid fa-person" style="color: #0065FC;"></i>Familial
+                        </div>
+                        <div class="filtre-romantique">
+                            <i class="fa-solid fa-heart" style="color: #0065FC"></i>Romantique
+                        </div>
+                        <div class="filtre-pepite">
+                            <i class="fa-solid fa-fire" style="color: #0065FC;"></i>Nos pépites
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="info-logement">
+                    <i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+                </div>
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                 </section>
