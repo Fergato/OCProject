@@ -75,18 +75,22 @@ a {
     width: 65%;
 }
 
-.hebergements-cards .card {
+.hebergements-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-cards a {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    height: 200px;
-    width: 240px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hebergements-cards img {
     height: 120px;
     width: 100%;
-    object-fit: cover;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
 }
@@ -94,11 +98,22 @@ a {
 .hebergement-card-firstrow {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .hebergement-card-secondrow {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .hebergements-cards .card-title {
@@ -113,10 +128,6 @@ a {
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
-}
-
-.hebergements-cards .card-content {
-    padding-left: 10px;
 }
 
 .Btnafficherplus input {
@@ -311,6 +322,65 @@ h2 {
     border: 1px solid var(--main-bg-color);
     border-radius: 50px;
     margin-right: 8px;
+}
+
+/* ----------------Activités---------------- */
+.activites {
+    width: 97%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.activites-titre {
+    margin: 10px 10px 30px 10px;
+}
+
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.activites-cards .card-txt {
+    padding-left: 10px;
+}
+
+.activites-cards a {
+    flex: 1;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    filter: none;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px -7px rgba(0, 0, 0, 0.3);
+}
+
+.activites-cards img {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/* --------------Footer----------------------- */
+
+footer {
+    background-color: white;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 80px 0px 10px 70px;
+    display: flex;
+}
+
+footer .column-footer {
+    margin-right: 240px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
