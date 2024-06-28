@@ -1,7 +1,4 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
 
 :root {
     --main-color: #0065FC;
@@ -22,6 +19,7 @@ html {
 body {
     width: 100%;
     max-width: 1440px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .main-container {
@@ -216,7 +214,6 @@ nav a {
 nav a:hover {
     text-decoration: overline #0065FC;
     color: var(--main-color);
-
 }
 
 header img {
@@ -272,6 +269,7 @@ form {
     border-left: none;
     text-align: center;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
     font-size: inherit;
 }
 
@@ -404,7 +402,7 @@ h2 {
     width: 100%;
     filter: none;
     box-sizing: border-box;
-    box-shadow: 0 4px 12px -7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.3);
     height: 100%;
 }
 
