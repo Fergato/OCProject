@@ -1,5 +1,4 @@
 /****** General ***********/
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -209,10 +208,11 @@ header nav {
 
 nav a {
     margin-left: 30px;
+    padding-top: 6px;
 }
 
 nav a:hover {
-    text-decoration: overline #0065FC;
+    border-top: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
@@ -425,6 +425,7 @@ footer {
     display: flex;
     width: 100%;
     padding: 0 50px;
+    margin-top: 80px;
 
 }
 
@@ -477,6 +478,10 @@ footer .column-footer {
     .activites-cards img {
         height: 240px;
     }
+
+    footer {
+        margin-top: 60px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -499,7 +504,7 @@ footer .column-footer {
 
     nav a:hover {
         border-bottom:  2px solid #0065FC;
-        text-decoration: none;
+        border-top: none;
     }
 
     nav a {
@@ -643,10 +648,14 @@ footer .column-footer {
     .populaires-cards .card-content {
         width: auto;
     }
+
+    footer {
+        margin-top: 40px;
+    }
 }
 
 /* Landscape orientation for tablets and smartphones */
-@media (min-width: 768px) and (max-width: 1000px) and (orientation: landscape){
+/* @media (min-width: 768px) and (max-width: 1000px) and (orientation: landscape){
 
     header nav {
         flex-direction: column;
@@ -661,7 +670,7 @@ footer .column-footer {
 
     nav a:hover {
         border-bottom:  2px solid #0065FC;
-        text-decoration: none;
+        border-top: none;
     }
 
     nav a {
@@ -805,4 +814,4 @@ footer .column-footer {
     .populaires-cards .card-content {
         width: auto;
     }
-}
+} */
